@@ -1,0 +1,25 @@
+创建一个本地仓库（即初始化）git init
+查看文件（包括隐藏文件） ll -a
+新建文件 vim 文件名（加后缀）esc(退出) (:wq)保存
+查看状态 git status 
+
+初始时在文件在工作区：
+git add 提交到暂存区
+	git rm --cached + fillname 从缓存区删除回到工作区
+git commit -m + "日志信息" + fillname  提交到本地库
+git reflog 查看版本信息（版本信息）
+git log 查看版本详息
+git reset --hard + 版本号（回到指定的版本号、改前改后都可以）
+git branch + 分支名 (创建分支)
+git branch -v (查看分支)
+git checkout + 分支名 (切换分支)
+git merge + 分支名 (把指定分支合并到当前分支上)
+
+git remote -v  查看当前所有远程库地址别名
+git remote add +别名+远程地址  起别名
+
+git push + 别名 + 分支	推送 --- 传到远程库
+git clone + 远程地址	克隆 --- 复制远程库到本地库
+git pull + 远程地址别名 + 远程地址分支     拉取 --- 更新本地库
+fork 复制远程库到远程库
+pull request 拉取请求 --- 远程库与远程库合并
